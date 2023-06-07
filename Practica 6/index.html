@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    setTimeout(() => console.log("Hola mundo"),2000)
+
+    function proceso(){
+        console.log("Espera un segundo");
+        setTimeout(function(){ console.log("ya paso un segundo");
+        setTimeout(function(){
+            console.log("Ya pasaron dos segundos");
+            setTimeout(function(){
+                console.log("ya pasaron tres segundos");
+                setTimeout(function(){
+                    console.log("Ya pasaroncuatro segundos");
+                },4000)
+            },3000)
+        },2000)
+    },1000)
+    }
+    proceso();
+</script>
+</html>
